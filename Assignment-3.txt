@@ -1,0 +1,43 @@
+Q:   Create your own resume data in JSON format?
+Ans:
+
+var resume={
+  "employeeName": "Pankaj Soni",
+  "employeeAge": 23,
+  "employeeEmail": "psoni572@gmail.com",
+  "language": "javaScript",
+  "companyName": "wipro",
+    "location": "banglore",
+    "years": 1
+  }
+
+
+
+Q:  For the given JSON iterate over all for loops (for, for in, for of, forEach)
+Ans: 
+
+Iterate over for in:
+
+for(var i in resume){
+  console.log(resume[i])
+}
+
+
+Iterate over for of:
+for(var key of Object.keys(resume)){
+  console.log(resume[key])
+}
+
+Iterate over forEach:
+Object.keys(resume).forEach(key=>{
+  console.log(resume[key])
+})
+
+
+Iterate over normal for-loop:
+
+var obj2= Object.values(resume)
+
+for(var i=0; i<obj2.length; i++){
+  console.log(obj2[i])
+}
